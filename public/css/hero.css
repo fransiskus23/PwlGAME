@@ -1594,3 +1594,9 @@ video {
         background-color: initial
     }
 }
+
+.top-up{
+    font-size: 100px;
+    font-weight: bold !important;
+    justify-content: center;
+}

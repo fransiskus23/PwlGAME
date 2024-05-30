@@ -6,8 +6,10 @@
       <!-- Left -->
       <div class="flex flex-wrap items-center justify-center">
         <div class="w-full self-center px-6 md:w-1/2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
-          <h1 class="text-2xl font-bold text-dark dark:text-white md:text-4xl">Hi, my name is <span class="mt-2 block text-2xl font-black text-sky md:text-5xl">Andriaman Damai Telaumbanua - Tora</span></h1>
-          <h2 class="mt-4 text-base font-medium text-dark dark:text-white md:text-xl">Saya seorang <span class="text-pink-500">Junior Front End Developer</span> dari Nias Sumatra utara, Indonesia</h2>
+          <h1 class="text-2xl font-bold text-dark dark:text-white md:text-4xl">Hi, Ya-Teams Arena<span class="top-up mt-2 block text-2xl font-black text-sky md:text-5xl">TOP UP</span></h1>
+          <h2 class="mt-3 text-base font-bold text-dark dark:text-white md:text-xl">Hi, Ya-Teams Arena<span class="text-pink-500"></span></h2>
+          <h2 class="mt-3 text-base font-bold text-dark dark:text-white md:text-xl">DIAMONDS <span class="text-pink-500">STORE</span></h2>
+          <h2 class="mt-3 text-base font-bold text-dark dark:text-white md:text-xl">DIAMONDS <span class="text-pink-500">STORE</span></h2>
           <div class="mt-3 mb-5 flex items-center">
             <!-- Fecebook -->
             <a href="https://www.facebook.com/Nobita" target="_blank">
@@ -39,13 +41,13 @@
             </a>
           </div>
           <p class="mb-3 text-sm font-medium text-slate-400 dark:text-white">I have a strong passion for crafting visually appealing and user-friendly websites.</p>
-          <p class="text-sm font-medium text-slate-400 dark:text-white">With a solid foundation in HTML, CSS, and JavaScript, I enjoy transforming ideas into functional and elegant web solutions. I have a keen eye for design, ensuring that every website I create is both aesthetically pleasing and intuitive to navigate.</p>
-          <a href="{{ route('products.index') }}" class="mt-5 inline-block rounded bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80">Shop Now</a>
+          <p class="text-sm font-medium text-slate-400 dark:text-white">With a solid foundation in HTML, CSS, and JavaScript, I enjoy transforming ideas into functional and elegant web solutions. I have a keen eye for design, ensuring that every website I create is both aesthetically pleasing and intuitive to navigate.</p><br><br>
+          <a href="{{ route('products.index') }}" class="mt-5 inline-block rounded bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80">Shop Now</a><br><br><br>
         </div>
         <!-- Right -->
         <div class="relative mt-10 w-full self-end px-4 md:w-1/2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000">
           <div class="relative mt-10">
-            <img src="{{ asset('img/logo.jpg') }}" class="relative mx-auto max-w-full rounded-lg" alt="Profile">
+            <img src="{{ asset('img/file.png') }}" class="relative mx-auto max-w-full rounded-lg" alt="Profile">
             <span class="absolute bottom-5 left-1/2 -translate-x-1/2 text-lg font-semibold text-dark dark:text-white">Andriaman Damai Telaumbanua - Tora</span>
           </div>
         </div>
