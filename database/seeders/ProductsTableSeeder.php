@@ -25,6 +25,13 @@ class ProductsTableSeeder extends Seeder
             'price' => 9.99,
             'stock' => 50,
         ]);
+        
+        DB::table('products')->insert([
+            'name' => 'Diamond epep 2',
+            'description' => '500 Diamonds',
+            'price' => 9.99,
+            'stock' => 50,
+        ]);
 
         // Tambahkan produk lain sesuai kebutuhan
     }
