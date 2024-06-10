@@ -7,7 +7,7 @@
     <p>${{ $product->price }}</p>
     <form action="{{ route('cart.add', $product->id) }}" method="POST">
         @csrf
-        <button type="submit" class="btn btn-primary">Add to Cart</button>
+        <a href="{{ route('product.checkout', $product->id) }}" class="btn btn-primary">Add to Cart</a>
     </form>
 </div>
 @endsection

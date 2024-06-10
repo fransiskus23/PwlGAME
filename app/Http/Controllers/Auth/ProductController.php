@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
 use App\Models\Product;
-use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
@@ -17,6 +17,11 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         return view('products.show', compact('product'));
+    }
+    public function checkout($id)
+    {
+        $product = Product::find($id);
+        return view('products.checkout', compact('product'));
     }
 }
 

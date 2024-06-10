@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 use App\Models\User;
@@ -8,21 +7,21 @@ use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Seed database aplikasi.
      */
     public function run(): void
     {
-        // Menjalankan factory untuk membuat 10 user
-        // User::factory(10)->create();
+        // Pastikan tidak ada pengguna dengan email yang sama
+        User::where('email', 'test@example.com')->delete();
 
-        // Membuat satu user dengan data khusus
+        // Buat pengguna tes
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
             'password' => bcrypt('asdasd'), // Password yang di-hash
         ]);
 
-        // Memanggil seeder ProductsTableSeeder
+        // Panggil seeder lainnya
         $this->call(ProductsTableSeeder::class);
     }
 }

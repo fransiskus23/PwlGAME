@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\Product;
+use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
@@ -44,4 +45,27 @@ class CartController extends Controller
 
         return redirect()->route('cart.index')->with('success', 'Product removed from cart!');
     }
+
+    public function checkout(Request $request)
+    {
+        // Validasi input
+        $request->validate([
+            'address' => 'required|string|max:255',
+            'payment_method' => 'required|string|in:bank_transfer,credit_card,cash_on_delivery',
+        ]);
+
+        $cart = session()->get('cart', []);
+
+        if (empty($cart)) {
+            return redirect()->route('cart.index')->with('error', 'Keranjang belanja Anda kosong!');
+        }
+
+        // Proses pembayaran (misalnya, integrasi dengan gateway pembayaran)
+        // Untuk keperluan contoh, kita akan mengosongkan keranjang dan menampilkan pesan sukses
+        session()->forget('cart');
+
+        return redirect()->route('home')->with('success', 'Pembayaran berhasil!');
+    }
 }
+
+
