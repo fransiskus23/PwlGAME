@@ -28,7 +28,8 @@ class CheckoutController extends Controller
         $order->email = $validatedData['email'];
         $order->id_game = $validatedData['id_game'];
         $order->payment_method = $validatedData['payment_method'];
-        $order->status = 'pending';
+        $order->jumlah_diamond = $validatedData['jumlah_diamond'];
+        $order->status = 'success';
         $order->save();
 
         // Dapatkan item keranjang

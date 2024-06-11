@@ -11,8 +11,8 @@
                         <p>Email: {{ $order->email }}</p>
                         <p>ID Game: {{ $order->id_game }}</p>
                         <p>Metode Pembayaran: {{ $order->payment_method }}</p>
+                        <p>Jumlah Diamond: {{ $order->jumlah_diamond }}</p>
                         <p>Status: {{ $order->status }}</p>
-                        <!-- Tambahkan informasi lain yang diperlukan -->
                     </div>
                 </div>
             </div>
