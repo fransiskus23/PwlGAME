@@ -3,6 +3,13 @@
     background-size: cover;
 } */
 
+body {
+    background-image: url("/img/bgv3.png");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+}
 
 .menu {
     display: flex;
@@ -14,7 +21,7 @@
 .menu-item {
     background-color: #fff;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
     width: calc(25% - 20px);
@@ -43,4 +50,27 @@
     border-radius: 5px;
     cursor: pointer;
     margin: 2px;
+}
+
+.navbar {
+    position: fixed; /* atau absolute jika diperlukan */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pastikan z-index lebih tinggi */
+    background-color: #fff; /* Tambahkan background untuk navigasi */
+}
+
+/* Contoh gaya untuk konten */
+main {
+    position: relative; /* Pastikan konten diatur relatif atau statis */
+    z-index: 1; /* Pastikan z-index lebih rendah dari navbar */
+    margin-top: 20px; /* Beri jarak atas untuk menghindari tumpang tindih */
+}
+
+.img_home{
+    width: 120%;
+}
+
+.top_up{
+    color: #5EF5F3 !important;
 }

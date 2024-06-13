@@ -17,6 +17,9 @@
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/cart.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/checkout.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/products.css') }}" rel="stylesheet">
 
 
   <!-- Fonts -->

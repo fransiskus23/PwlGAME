@@ -1,16 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="home" class="bg-white pt-36 dark:bg-dark">
+<section id="home" class="hero_section  pt-36 dark:bg-dark">
     <div class="container">
       <!-- Left -->
       <div class="flex flex-wrap items-center justify-center">
         <div class="w-full self-center px-6 md:w-1/2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="3000">
-          <h1 class="text-2xl font-bold text-dark dark:text-white md:text-4xl">Hi, Ya-Teams Arena<span class="top-up mt-2 block text-2xl font-black text-sky md:text-5xl">TOP UP</span></h1>
-          <h2 class="mt-3 text-base font-bold text-dark dark:text-white md:text-xl">Hi, Ya-Teams Arena<span class="text-pink-500"></span></h2>
-          <h2 class="mt-3 text-base font-bold text-dark dark:text-white md:text-xl">DIAMONDS <span class="text-pink-500">STORE</span></h2>
-          <h2 class="mt-3 text-base font-bold text-dark dark:text-white md:text-xl">DIAMONDS <span class="text-pink-500">STORE</span></h2>
-          <div class="mt-3 mb-5 flex items-center">
+          <h2 class="text-2xl font-bold text-white dark:text-white md:text-4xl">Hi, Ya-Teams Arena<span class="text-pink-500"></span></h2>
+          <h2 class="top_up mt-3 text-base font-bold md:text-xl"><span class="top-up mt-2 block text-2xl font-black  md:text-5xl">TOP UP</span></h2>
+          <h2 class="mt-3 text-base font-bold text-white dark:text-white md:text-xl">DIAMONDS <span class="text-pink-500">STORE</span></h2>
+          <div class="container_icon mt-3 mb-5 flex items-center">
             <!-- Fecebook -->
             <a href="https://www.facebook.com/Nobita" target="_blank">
               <svg class="mr-3 w-7 transition duration-200 ease-in-out hover:opacity-80 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
@@ -40,18 +39,19 @@
               </svg>
             </a>
           </div>
-          <p class="mb-3 text-sm font-medium text-slate-400 dark:text-white">I have a strong passion for crafting visually appealing and user-friendly websites.</p>
-          <p class="text-sm font-medium text-slate-400 dark:text-white">With a solid foundation in HTML, CSS, and JavaScript, I enjoy transforming ideas into functional and elegant web solutions. I have a keen eye for design, ensuring that every website I create is both aesthetically pleasing and intuitive to navigate.</p><br><br>
-          <a href="{{ route('products.index') }}" class="mt-5 inline-block rounded bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80">Shop Now</a><br><br><br>
+            <p class="text-center mb-3 text-sm font-medium text-slate-400 dark:text-white">I have a strong passion for crafting visually appealing and user-friendly websites.</p>
+          <p class="text-center text-sm font-medium text-slate-400 dark:text-white">With a solid foundation in HTML, CSS, and JavaScript, I enjoy transforming ideas into functional and elegant web solutions. I have a keen eye for design, ensuring that every website I create is both aesthetically pleasing and intuitive to navigate.</p>
+          <div class="container_button">
+          <a href="{{ route('products.index') }}" class="mt-4 inline-block rounded bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80">Shop Now</a>
+          </div>
         </div>
         <!-- Right -->
         <div class="relative mt-10 w-full self-end px-4 md:w-1/2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000">
-          <div class="relative mt-10">
-            <img src="{{ asset('img/file.png') }}" class="relative mx-auto max-w-full rounded-lg" alt="Profile">
-            <span class="absolute bottom-5 left-1/2 -translate-x-1/2 text-lg font-semibold text-dark dark:text-white">Andriaman Damai Telaumbanua - Tora</span>
+          <div class="img_home relative mt-19">
+            <img src="{{ asset('img/bgv5.png') }}" class="relative mx-auto max-w-full rounded-lg" alt="Profile">
           </div>
         </div>
       </div>
     </div>
   </div>
-  </section>
+  </section><br><br>

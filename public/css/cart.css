@@ -1,0 +1,62 @@
+.container_cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+    /* background-image: url("/img/bgbg.png"); */
+    background-color: rgba(19, 23, 26, 0.8) !important; /* Ensuring transparency */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px; /* Adjusted width for compact card */
+    margin: auto; /* Center horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 6.1); /* Add subtle shadow for better appearance */
+    background-size: 140%;
+    background-position: center;
+}
+
+
+.container_cart img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 10px; /* Optional: add rounded corners to the image */
+}
+
+.container_cart h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+}
+
+.container_cart p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #bdc3c7;
+}
+
+.container_cart form {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.judul_cart{
+    display: flex;
+    justify-content: center;
+    color: azure;
+}

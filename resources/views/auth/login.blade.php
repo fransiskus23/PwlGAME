@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 d-flex justify-content-center">
             <div class="login_form_container">
                 <div class="login_form">
                     <div class="container_logo">
@@ -16,7 +16,7 @@
                         @csrf
 
                         <div class="input_group">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-user"></i> &nbsp; &nbsp;
                             <input id="email" type="email" placeholder="Email" class="input_text @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="input_group">
-                            <i class="fa fa-unlock-alt"></i>
+                            <i class="fa fa-unlock-alt"></i> &nbsp; &nbsp;
                             <input id="password" type="password" placeholder="Password" class="input_text @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                             @error('password')
                                 <span class="invalid-feedback" role="alert">

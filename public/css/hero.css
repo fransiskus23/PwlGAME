@@ -68,13 +68,7 @@ small {
     font-size: 80%
 }
 
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: initial
-}
+
 
 sub {
     bottom: -.25em
@@ -423,9 +417,7 @@ video {
     position: absolute
 }
 
-.relative {
-    position: relative
-}
+
 
 .top-0 {
     top: 0
@@ -463,13 +455,8 @@ video {
     right: 2.5rem
 }
 
-.z-50 {
-    z-index: 50
-}
 
-.z-10 {
-    z-index: 10
-}
+
 
 .m-1 {
     margin: .25rem
@@ -485,10 +472,7 @@ video {
     margin-right: .75rem
 }
 
-.my-5 {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem
-}
+
 
 .mx-auto {
     margin-left: auto;
@@ -499,21 +483,13 @@ video {
     margin-right: .25rem
 }
 
-.mt-3 {
-    margin-top: .75rem
-}
+
 
 .ml-1 {
     margin-left: .25rem
 }
 
-.mt-2 {
-    margin-top: .5rem
-}
 
-.mt-4 {
-    margin-top: 1rem
-}
 
 .mb-5 {
     margin-bottom: 1.25rem
@@ -521,10 +497,6 @@ video {
 
 .mr-3 {
     margin-right: .75rem
-}
-
-.mt-10 {
-    margin-top: 2.5rem
 }
 
 .mb-3 {
@@ -1141,14 +1113,7 @@ video {
     transition-timing-function: cubic-bezier(.4, 0, .2, 1)
 }
 
-.name {
-    position: relative;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: transparent
-}
+
 
 @media (min-width:768px) {
     .name {
@@ -1224,74 +1189,7 @@ video {
     stroke-miterlimit: 1.41421
 }
 
-.navbar-fixed {
-    position: fixed;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity));
-    --tw-bg-opacity: 0.5
-}
 
-.dark .navbar-fixed {
-    background-color: rgb(15 23 42/var(--tw-bg-opacity));
-    --tw-bg-opacity: 0.5
-}
-
-.navbar-fixed {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .2)
-}
-
-.hamburger-line {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    display: block;
-    height: 2px;
-    width: 30px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(15 23 42/var(--tw-bg-opacity))
-}
-
-.dark .hamburger-line {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity))
-}
-
-.hamburger-active>span:first-child {
-    --tw-rotate: 45deg
-}
-
-.hamburger-active>span:first-child,
-.hamburger-active>span:nth-child(2) {
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.hamburger-active>span:nth-child(2) {
-    --tw-scale-x: 0;
-    --tw-scale-y: 0
-}
-
-.hamburger-active>span:nth-child(3) {
-    --tw-rotate: -45deg
-}
-
-#dark-toggle:checked~label div.toggle-circle,
-.hamburger-active>span:nth-child(3) {
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-#dark-toggle:checked~label div.toggle-circle {
-    --tw-translate-x: 1.25rem
-}
-
-.placeholder\:text-dark::-moz-placeholder {
-    --tw-text-opacity: 1;
-    color: rgb(15 23 42/var(--tw-text-opacity))
-}
-
-.placeholder\:text-dark::placeholder {
-    --tw-text-opacity: 1;
-    color: rgb(15 23 42/var(--tw-text-opacity))
-}
 
 .after\:ml-0\.5:after {
     content: var(--tw-content);
@@ -1599,4 +1497,51 @@ video {
     font-size: 100px;
     font-weight: bold !important;
     justify-content: center;
+}
+
+
+.container_icon
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container_button
+{
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Pusatkan tombol dalam container */
+    margin-top: 20px; /* Beri jarak atas */
+}
+
+.hero_section
+{
+    position: relative; /* Pastikan konten diatur relatif atau statis */
+    z-index: 1; /* Pastikan z-index lebih rendah dari navbar */
+    margin-top: 60px; /* Beri jarak atas untuk menghindari tumpang tindih */
+}
+
+
+.container_button a {
+    display: inline-block; /* Pastikan tombol adalah elemen blok dalam baris */
+    padding: 12px 24px; /* Sesuaikan padding */
+    background-color: #007bff; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    font-size: 16px; /* Ukuran font */
+    font-weight: bold; /* Ketebalan font */
+    border-radius: 8px; /* Membuat sudut tombol melengkung */
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Animasi transisi */
+}
+
+.container_button a:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
+    opacity: 0.9; /* Ubah opasitas saat hover */
+}
+
+.container_button a:active {
+    background-color: #004085; /* Warna latar belakang saat klik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lebih kecil saat klik */
+    transform: scale(0.98); /* Efek kecil saat klik */
 }

@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         // Buat pengguna tes
         User::factory()->create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
+            'email' => ' ',
             'password' => bcrypt('asdasd'), // Password yang di-hash
         ]);
 
